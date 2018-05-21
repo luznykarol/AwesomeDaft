@@ -1,0 +1,45 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; 
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	
+	box-sizing: border-box;
+	font-size: 62.5%; 
+}
+
+body {
+	color: var(--color-white);
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.4), 
+		rgba(0, 0, 0, 0.7)),
+				url(../img/bg_image.jpg);
+	background-size: 383% 154%;
+	background-repeat: no-repeat;
+	background-position: 60% 44%;	
+	
+	@media (min-width: 1024px) {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../img/bg_image.jpg);
+		background-size: 197% 171%;
+		background-position: 64% 36%;
+	}
+}
+
+a {
+	color: var(--color-white);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
