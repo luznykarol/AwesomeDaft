@@ -16,6 +16,10 @@
         margin: 9rem auto 12rem auto;
     }
 
+    @media (min-width: 1300px) {
+        margin: 8rem auto;
+    }
+
     @media(min-width: 1400px) {
         height: 10.4rem;
         width: 10.4rem;
