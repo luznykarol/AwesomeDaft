@@ -12,7 +12,6 @@ body {
 }
 
 html {
-	
 	box-sizing: border-box;
 	font-size: 62.5%; 
 }
@@ -27,10 +26,16 @@ body {
 	background-repeat: no-repeat;
 	background-position: 60% 44%;	
 	
-	@media (min-width: 1024px) {
+	@media (min-width: 565px) {
 		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../img/bg_image.jpg);
 		background-size: 197% 171%;
 		background-position: 64% 36%;
+	}
+
+	@media (min-width: 1200px) {
+		background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url(../img/bg_image.jpg);
+		background-size: 179% 194%;
+		background-position: 69% 34%
 	}
 }
 
@@ -42,4 +47,12 @@ a {
 
 ul {
 	list-style: none;
+}
+
+.display {
+    display: none;
+}
+
+.small {
+	font-size: 10rem;
 }

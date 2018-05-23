@@ -2,8 +2,17 @@ $(document).ready(function() {
 
 	$('#burger').click(function() {
 		$(this).toggleClass('navigation__burger--open');
-		$('#list').slideToggle(500);
+
+		if($(window).width() < 800) {
+		if ($('#list').css('opacity') == 0) {
+			$('#list').css('opacity', 1);
+			$('#list').css('display', 'initial');
+		}
+		else {
+			$('#list').css('opacity', 0);
+		}};
 	});
+		
 
 	$('#link').click(function () {
 		$('#list').slideToggle();
@@ -23,9 +32,8 @@ $(document).ready(function() {
 		$(this).toggleClass('spin');
 	});
 
-	$('#triangle').click(function() {
-		$(this).animate({bottom: '100px'});
-		$('#plus').animate({bottom: '100px'});
-		$('#more').animate({bottom: '100px'});
-	})
+	$('#more').click(function() {
+		$(this).text(($('#more').text() == 'thx 4 the tip') ? 'more' : 'thx 4 the tip').fadeIn();
+		$(this).toggleClass('small');
+	});
 });
