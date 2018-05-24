@@ -10,14 +10,14 @@
         margin: 4rem auto;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (min-height: 768px){
         height: 8rem;
         width: 8rem;
         margin: 9rem auto 12rem auto;
     }
 
     @media (min-width: 1300px) {
-        margin: 8rem auto;
+        margin: 6rem auto 9rem auto;
     }
 
     @media(min-width: 1400px) and (min-height: 900px) {

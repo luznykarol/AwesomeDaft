@@ -3,7 +3,7 @@
     margin: 2.5rem auto 2.5rem auto;
     padding-top: 7rem;
 
-    @media (max-height: 667px) {
+    @media (min-width: 400px) and (max-width: 700px) and (max-height: 667px) {
         padding-top: 16rem;
     }
 
@@ -15,8 +15,11 @@
 
     @media (min-width: 1200px) {
         max-width: 57rem;
-        margin: 12.5rem auto 0 auto;
-        padding: 0;     
+        margin: 8.5rem auto 0 auto;
+        padding: 0;
     }
     
+    @media (min-width: 1400px) {
+        margin: 12.5rem auto 0 auto;   
+    }
 }
