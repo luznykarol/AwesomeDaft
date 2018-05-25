@@ -1,18 +1,8 @@
 $(document).ready(function() {
-	//change the burger image to x
+	//change the burger image to x and fade the list in/out on click
 	$('#burger').click(function() {
+		$('#list').fadeToggle();
 		$(this).toggleClass('navigation__burger--open');
-		
-
-		//animate the list opacity after you toggle the burger.
-		if($(window).width() < 800) {
-		if ($('#list').css('opacity') == 0) {
-			$('#list').css('opacity', 1);
-			$('#list').css('display', 'initial');
-		}
-		else {
-			$('#list').css('opacity', 0);
-		}};
 	});
 		
 	//after clicking the link, burger closes and list slides up/down
